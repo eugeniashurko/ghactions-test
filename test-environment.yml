@@ -1,5 +1,6 @@
 channels:
   - conda-forge
+  - stellargraph
   - defaults
 dependencies:
   - graph-tool==2.37
@@ -10,7 +11,7 @@ dependencies:
   - scipy
   - matplotlib
   - nltk
-  # - stellargraph>=1.2.0
+  - stellargraph>=1.2.0
   # - python-louvain
   # - tox
   # - pytest
