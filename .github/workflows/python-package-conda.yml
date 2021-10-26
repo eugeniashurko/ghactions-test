@@ -20,7 +20,8 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        python3 --version
+        python --version
+        conda info --envs
         pip install git+https://github.com/stellargraph/stellargraph
         pip install .
     - name: Lint with flake8
