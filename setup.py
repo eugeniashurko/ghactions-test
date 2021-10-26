@@ -40,16 +40,16 @@ setup(
         # "pytest-cov==2.10.1",
         # "pytest-mock==3.3.1", "codecov",
         # "dash==1.19.0",
-        # "jupyter_dash",
-        # "dash_bootstrap_components",
-        # "dash_daq",
-        # "dash_extensions",
+        "jupyter_dash",
+        "dash_bootstrap_components",
+        "dash_daq",
+        "dash_extensions",
         # "dash_cytoscape",
-        # "nexus-sdk",
+        "nexus-sdk",
         # "pyjwt==1.7.1",
         # "ipywidgets",
-        # "neo4j",
-        # "stellargraph>=1.2.0"
+        "neo4j",
+        "stellargraph>=1.2.0"
     ],
     classifiers=[
         "Intended Audience :: Information Technology",
