@@ -4,6 +4,12 @@ channels:
 dependencies:
   - graph-tool==2.37
   - faiss-cpu
+  - numpy>=1.20.1
+  - pandas
+  - scikit-learn>=0.24.2
+  - scipy
+  - matplotlib
+  - nltk
   # - stellargraph>=1.2.0
   # - python-louvain
   # - tox
