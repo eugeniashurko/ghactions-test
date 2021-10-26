@@ -49,7 +49,7 @@ setup(
         # "pyjwt==1.7.1",
         # "ipywidgets",
         "neo4j",
-        # "stellargraph>=1.2.0"
+        "stellargraph"
     ],
     classifiers=[
         "Intended Audience :: Information Technology",
