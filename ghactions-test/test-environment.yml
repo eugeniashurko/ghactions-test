@@ -1,0 +1,25 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - graph-tool==2.37
+  - faiss-cpu
+  # - stellargraph>=1.2.0
+  # - python-louvain
+  # - tox
+  # - pytest
+  # - pytest-bdd
+  # - pytest-cov==2.10.1
+  # - pytest-mock==3.3.1
+  # - codecov
+  # - dash==1.19.0
+  # - jupyter_dash
+  # - dash_bootstrap_components
+  # - dash_daq
+  # - dash_extensions
+  # - dash_cytoscape
+  # - nexus-sdk
+  # - pyjwt==1.7.1
+  # - ipywidgets
+  # - neo4j
+  # - stellargraph>=1.2.0
