@@ -1,10 +1,9 @@
-name: Test workflow
+name: Test actions
 on:
     pull_request:
     push:
       branches:
         - master
-        - github-action-test
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,14 +16,16 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-     - name: Add conda to system path
+      - name: Add conda to system path
         run: |
             # $CONDA is an environment variable pointing to the root of the miniconda directory
             echo $CONDA/bin >> $GITHUB_PATH
-    - name: Update the base env with graph-tool and faiss-gpu installed from conda-forge
-      run: |
-         $CONDA/bin/conda env update --file test-environment.yml --name base
-    - name: Install the rest of the dependencies
-      run: |
-        $CONDA/bin/python3 -m pip install .[dev]
-        $CONDA/bin/pytest info -a
+      - name: Useful for debugging any issues with conda
+        run: $CONDA/bin/conda info -a
+      - name: Update the base env with graph-tool and faiss-gpu installed from conda-forge
+        run: |
+           $CONDA/bin/conda env update --file test-environment.yml --name base
+      - name: Install the rest of the dependencies
+        run: |
+          $CONDA/bin/python3 -m pip install .[dev]
+          $CONDA/bin/pytest info -a
